@@ -359,7 +359,7 @@ func (s *Stream) SendCompress() string {
 }
 
 // ClientAdvertisedCompressors returns the compressor names advertised by the
-// client via :grpc-accept-encoding header.
+// client via grpc-accept-encoding header.
 func (s *Stream) ClientAdvertisedCompressors() string {
 	return s.clientAdvertisedCompressors
 }
